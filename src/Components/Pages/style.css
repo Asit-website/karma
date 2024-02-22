@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parentlordshiva {
+    /* background: #FBFBF8;
+    height: 100vh; */
+}
+
+.lordshiva {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    background: #FBFBF8;
+    height: 100vh;
+}
+
+.lordshivaleft {
+    width: 47%;
+}
+
+.sublord {
+    margin: 73px 100px 0px 95px
+}
+
+.sublord .img {
+    width: 33%;
+}
+
+.lordDesc {
+    margin-top: 60px;
+    margin-right: 27px;
+}
+
+.sublord .paraIns {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.sublord .paraChoose {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 15px;
+    padding-right: 128px;
+    /* color: background: #464038; */
+    ;
+}
+
+
+
+.numberquestion {
+    display: flex;
+    margin-top: 10px;
+}
+
+.numberquestion .imgquestion {
+    width: Fill (398px);
+    height: Hug (22px);
+    gap: 10px;
+}
+
+.numberquestion .paraquestion {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.lordshivaright {
+    width: 60%;
+    background-image: url(../../Assest/Bhagwan-Shiva-.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.lordahivaright {
+    margin: 30px;
+}
+.lordquestion{
+    margin-top: 50px;
+    margin-left: 55px
+}
+
+.headingright {
+    /* border: 1px solid red; */
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.lordsubquestion {
+    margin-top: 60px;
+    width: 70%;
+}
+
+.lordsubquestion .headingheading {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    /* background: #000; */
+}
+
+.lordquestionflex {
+    border: 1px solid #E3E3E3;
+    display: flex;
+    width: Fixed (595px);
+    height: Hug (75px);
+    padding: 20px;
+    border-radius: 8px;
+    /* border: 1px; */
+    gap: 16px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    /* color: white */
+     background: #FFFFFF;
+
+}
+.borderA{
+    border: 1px solid #926D57;
+    padding: 2px 5px;
+    border-radius: 50%
+}
+.lordquestionflex:hover{
+    background: linear-gradient(180deg, #93526E 0%, #93526E 100%);
+    color: white;
+}
+.borderA:hover{
+    /* color: linear-gradient(180deg, #93526E 0%, #93526E 100%);;
+    background: white */
+}
+
+
+/* .lordsubquestion{
+    display: flex;
+    justify-content: end;
+} */
+.questionbutton{
+    display: flex;
+    justify-content: end;
+}
+
+.questionbutton button{
+    /* width: Fixed (156px);
+    height: Hug (55px); */
+    top: 474px;
+    left: 439px;
+    padding: 18px, 10px, 18px, 10px;
+    border-radius: 12px;
+    gap: 10px;
+    padding: 15px;
+    width: 25%;
+     background: #DDD8C2;
+     border: 1px solid #DDD8C2;
+}

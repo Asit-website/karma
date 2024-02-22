@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parentSignup {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+}
+
+.signupImg {
+    /* width: 720px; */
+    width: 55%;
+    height: 1080px
+}
+
+.signupImg img{
+    width: 85%;
+}
+
+.signupform {
+    /* padding: 300px 0px 0px 0px; */
+    /* margin: 200px 0px 0px 200px ;   */
+    width: 50%;
+    margin: auto;
+}
+
+.subsignupform {
+    padding: 10px;
+    /* width: 300px; */
+    width: 416px
+    /* border: 1px solid red; */
+}
+
+.signupform h1 {
+    text-align: center;
+}
+
+.forminput {
+    margin-top: 20px;
+}
+
+
+.inputfont .svgfont{
+    position: relative;
+    left: 17px;
+    top: 50px;
+}
+
+.inputfont{
+    width: 400px; 
+}
+
+.inputfont input{
+    border: 1px solid #101010;
+    /* width: Fixed (400px); */
+    width: 100%;
+    /* padding-top: 10px; */
+    margin-top: 10px;
+    height: Hug (64px);
+    /* top: 359px; */
+    /* left: 880px; */
+    padding: 20px;
+    border-radius: 6px;
+    gap: 10px;
+}
+.inputfont input[placeholder="Email"], input[placeholder="password"], input[placeholder="Confirm Password"], input[placeholder="First Name"], input[placeholder="Last Name"] {
+    padding-left: 44px;
+    font-size: 12px;
+}
+
+.achortag a {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    font-family: Wix Madefor Text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #926D57;
+
+}
+
+.forminput button {
+    width: 400px;
+    /* width: 100%; */
+    height: 55px;
+    top: 588px;
+    left: 880px;
+    border-radius: 12px;
+    background-color: #464038 ;
+    color: white;
+}
+
+.termcondition {
+    margin-top: 20px;
+    /* width: 247px; */
+    /* height: 19px; */
+    /* border: 1px solid red; */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.forminput hr{
+    margin-top: 20px;
+}
+
+.horizontal hr{
+    height: 1px;
+    width: 200px;
+}
+.horizontal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* margin-left: 50px; */
+    width: 100%
+
+}
+
+.para{
+    text-align: center;
+}
+.paraor{
+    padding: 10px;
+    margin-top: 20px;
+}
+.formgoogle{
+    width: 377px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #464038;
+}
+
+.facebook{
+    margin-left: 30px;
+}
