@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* <----------------Question1----------------> */
+
 .parentlordshiva {
     /* background: #FBFBF8;
     height: 100vh; */
@@ -82,7 +84,7 @@
 
 .lordshivaright {
     width: 60%;
-    background-image: url(../../Assest/Bhagwan-Shiva-.png);
+    background-image: url(../../Assest/lordshiva1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -91,7 +93,8 @@
 .lordahivaright {
     margin: 30px;
 }
-.lordquestion{
+
+.lordquestion {
     margin-top: 50px;
     margin-left: 55px
 }
@@ -132,28 +135,27 @@
 .lordquestionflex {
     border: 1px solid #E3E3E3;
     display: flex;
+    align-items: center;
+    text-align: start;
     width: Fixed (595px);
-    height: Hug (75px);
-    padding: 20px;
+    /* height: Hug (75px); */
+    padding: 10px;
     border-radius: 8px;
     /* border: 1px; */
     gap: 16px;
     margin-bottom: 15px;
     margin-top: 30px;
     /* color: white */
-     background: #FFFFFF;
+    background: #FFFFFF;
 
 }
-.borderA{
-    border: 1px solid #926D57;
-    padding: 2px 5px;
-    border-radius: 50%
-}
-.lordquestionflex:hover{
+
+.lordquestionflex:hover {
     background: linear-gradient(180deg, #93526E 0%, #93526E 100%);
     color: white;
 }
-.borderA:hover{
+
+.borderA:hover {
     /* color: linear-gradient(180deg, #93526E 0%, #93526E 100%);;
     background: white */
 }
@@ -163,12 +165,12 @@
     display: flex;
     justify-content: end;
 } */
-.questionbutton{
+.questionbutton {
     display: flex;
     justify-content: end;
 }
 
-.questionbutton button{
+.questionbutton button {
     /* width: Fixed (156px);
     height: Hug (55px); */
     top: 474px;
@@ -178,6 +180,182 @@
     gap: 10px;
     padding: 15px;
     width: 25%;
-     background: #DDD8C2;
-     border: 1px solid #DDD8C2;
+    background: #DDD8C2;
+    border: 1px solid #DDD8C2;
+}
+
+/* <------------ Question2 -------------> */
+
+.question2lordshivaright {
+    width: 60%;
+    background-image: url(../../Assest/lordshiva2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* <------------- Question3 --------------> */
+
+.question3lordshivaright {
+    width: 60%;
+    background-image: url(../../Assest/lordshiva3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* <---------------------Karmascore--------------------> */
+.karmaScore {
+    background-image: url(../../Assest/Group3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.karmaSubscore {
+    /* width: 76%; */
+    padding: 50px 80px;
+}
+
+.scorelogo-img {
+    width: 132px;
+    height: 132px;
+    top: 134px;
+    left: 100px;
+}
+
+.scorelogo-heading {
+    padding: 45px 20px
+}
+
+.scorelogo-heading h1 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.scorelogo {
+    display: flex;
+
+}
+
+.scorelogo {
+    color: white;
+}
+
+.scoredes {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px
+}
+
+.scoredes .subscoredes-para {
+    width: 626px;
+    height: 106px;
+    top: 379px;
+    left: 100px;
+    gap: 16px;
+
+}
+
+.subscoredes-para h1 {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.subscoredes-para p {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.subscoredes-img {
+    /* width: 25%; */
+    /* margin-left: 20px; */
+    display: block;
+    margin: auto;
+}
+
+.horizontal {
+    padding: 30px 0px;
+    width: 76%;
+}
+
+.horizontal hr {
+    /* height: 1px; */
+    width: 1378px;
+    /* padding: 10px 10px; */
+}
+
+.scorecontact {
+    text-align: center;
+}
+
+.scorecontact .scorecontact-button {
+    width: 346px;
+    height: 60px;
+    top: 564px;
+    left: 547px;
+    padding: 18px, 32px, 18px, 32px;
+    border-radius: 12px;
+    gap: 10px;
+    background: #E0D7C8;
+}
+
+.scorecontact-button p {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* background: #FFFFFF; */
+    text-align: center;
+
+}
+
+.scorecontact .scorecontact-a {
+    /* width: 176px;
+    height: 24px;
+    top: 648px; 
+    left: 632px; */
+    padding: 20px;
+
+}
+
+.scorecontact-a a {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+/* <-------------------karmascore1-------------> */
+.karmaScore1{
+    background-image: url(../../Assest/Group2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
