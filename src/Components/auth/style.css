@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Helvetica;
+    src: url("./Helvetica/HelveticaNowDisplay-Black.eot");
+    /* src: url("./Helvetica/HelveticaNowDisplay-Black.ttf"); */
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("./Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +53,13 @@
 
 .signupform h1 {
     text-align: center;
+    font-family: "Helvetica Now Display", sans-serif;
+font-size: 32px;
+font-weight: 700;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 .forminput {
@@ -87,10 +106,10 @@
     letter-spacing: 0px;
     text-align: left;
     color: #926D57;
-
 }
 
 .forminput button {
+    font-family: "Inter";
     width: 400px;
     /* width: 100%; */
     height: 55px;
@@ -106,7 +125,7 @@
     /* width: 247px; */
     /* height: 19px; */
     /* border: 1px solid red; */
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
