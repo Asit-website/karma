@@ -1,7 +1,9 @@
 @font-face {
-    font-family: Helvetica;
-    src: url("./Helvetica/HelveticaNowDisplay-Black.eot");
+    font-family: 'Helvetica', sans-serif;
+    /* src: url("./Helvetica/HelveticaNowDisplay-Black.eot"); */
     /* src: url("./Helvetica/HelveticaNowDisplay-Black.ttf"); */
+    src: url("./Helvetica/HelveticaNowDisplay-Light.eot");
+    src: url("./Helvetica/HelveticaNowDisplay-Light.ttf");
 }
 
 @font-face {
@@ -14,28 +16,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Helvetica',sans-serif; */
 }
 
 .parentSignup {
     /* border: 1px solid red; */
     display: flex;
     width: 100%;
+    background-color: #FBFBF8 !important;
 }
 
 .signupImg {
     /* width: 720px; */
     width: 50%;
-    height: 1080px
+    height: auto;
+    /* height: 1080px */
 }
 
-.signupImg img{
+.signupImg img {
     width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .signupform {
     /* padding: 300px 0px 0px 0px; */
     /* margin: 200px 0px 0px 200px ;   */
-    width: 30%;
+    /* width: 100%; */
     margin: auto;
 }
 
@@ -53,31 +60,34 @@
 
 .signupform h1 {
     text-align: center;
-    font-family: "Helvetica Now Display", sans-serif;
-font-size: 32px;
-font-weight: 700;
-line-height: 47px;
-letter-spacing: 0em;
-text-align: left;
-
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: center;
 }
 
 .forminput {
     /* margin-top: 20px; */
 }
 
+.horizontal {
+    width: 100% !important;
+}
 
-.inputfont .svgfont{
+.inputfont .svgfont {
     position: relative;
     left: 17px;
     top: 50px;
 }
 
-.inputfont{
-    width: 400px; 
+.inputfont {
+    width: 100%;
 }
 
-.inputfont input{
+.inputfont input {
     border: 1px solid #101010;
     /* width: Fixed (400px); */
     width: 100%;
@@ -89,8 +99,14 @@ text-align: left;
     padding: 20px;
     border-radius: 6px;
     gap: 10px;
+    font-family: 'Helvetica', sans-serif;
 }
-.inputfont input[placeholder="Email"], input[placeholder="password"], input[placeholder="Confirm Password"], input[placeholder="First Name"], input[placeholder="Last Name"] {
+
+.inputfont input[placeholder="Email"],
+input[placeholder="password"],
+input[placeholder="Confirm Password"],
+input[placeholder="First Name"],
+input[placeholder="Last Name"] {
     padding-left: 44px;
     font-size: 12px;
 }
@@ -109,14 +125,14 @@ text-align: left;
 }
 
 .forminput button {
-    font-family: "Inter";
-    width: 400px;
+    font-family: "Inter", sans-serif;
+    width: 100%;
     /* width: 100%; */
     height: 55px;
     top: 588px;
     left: 880px;
     border-radius: 12px;
-    background-color: #464038 ;
+    background-color: #464038;
     color: white;
 }
 
@@ -133,15 +149,16 @@ text-align: left;
     text-align: center;
 }
 
-.forminput hr{
+.forminput hr {
     margin-top: 20px;
 }
 
-.horizontal hr{
+.horizontal hr {
     height: 1px;
     width: 200px;
 }
-.horizontal{
+
+.horizontal {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -149,24 +166,25 @@ text-align: left;
     /* border: 1px solid red; */
     /* margin-left: 50px; */
     width: 100%
-
 }
 
-.para{
+.para {
     text-align: center;
 }
-.paraor{
+
+.paraor {
     padding: 10px;
     margin-top: 20px;
 }
-.formgoogle{
-    width: 377px;
+
+.formgoogle {
+    width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     color: #464038;
 }
 
-.facebook{
+.facebook {
     margin-left: 30px;
 }
