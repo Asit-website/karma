@@ -1,20 +1,27 @@
-import './App.css';
-import Login from './Components/auth/Login';
-import Signup from './Components/auth/Signup';
-import Question1 from './Components/Pages/Question1';
-import Question2 from './Components/Pages/Question2';
-import Question3 from './Components/Pages/Question3';
-import Karmascore from './Components/Pages/karmascore';
-import Karmascore1 from './Components/Pages/karmascore1';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./Components/auth/Login";
+import Signup from "./Components/auth/Signup";
+import Question1 from "./Components/Pages/Question1";
+import Question2 from "./Components/Pages/Question2";
+import Question3 from "./Components/Pages/Question3";
+import Karmascore from "./Components/Pages/karmascore";
+import Karmascore1 from "./Components/Pages/karmascore1";
+import Thanku from "./Components/Pages/thanku";
+import Navbar from "./Components/Pages/Navbar";
+import Home from "./Components/Pages/Home";
 
 function App() {
   return (
     <div>
-        {/* <Signup /> */}
-        {/* <Login /> */}
-        {/* <Question1 /> */}
-        {/* <Karmascore /> */}
-        <Karmascore1 />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
