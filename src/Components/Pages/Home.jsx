@@ -665,7 +665,7 @@ const Home = () => {
             <div class="footer_flext">
               <div class="Home_1 ww">Home</div>
               <div class="about_1 ww">About</div>
-              <div class="lets ww">Let’s Start</div>
+             <NavLink to="/question"><div class="lets ww">Let’s Start</div></NavLink>
             </div>
           </div>
         </div>
