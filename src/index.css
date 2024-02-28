@@ -1,0 +1,25 @@
+@font-face{
+    font-family: Helvetica ;
+    src: local("HelveticaNowDisplay-Regular.ttf"),
+    url("./Components/Pages/Helvetica/HelveticaNowDisplay-Regular.ttf")
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' ); */
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter-Regular.ttf"),
+    url("./Components/Pages/Inter/static/Inter-Regular.ttf")
+    
+}
+
+@font-face {
+    font-family: Inter-medium;
+    src: local('Inter-Medium.ttf'),
+    url("./Components/Pages/Inter/static/Inter-Medium.ttf")
+}
+
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}

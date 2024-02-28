@@ -7,6 +7,7 @@ import profile from "../../Assest/Ellipse 604.png";
 import profile1 from "../../Assest/Ellipse 604 (1).png";
 import profile2 from "../../Assest/Ellipse 604 (2).png";
 import profile3 from "../../Assest/Ellipse 604 (3).png";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -598,6 +599,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="justtake_text21">
+              <div className="rahul_t">
                 <img src={profile1} alt="" />
                 <div className="aditi">Aditi Verma</div>
                 <p className="justtake_text22">
@@ -607,8 +609,10 @@ const Home = () => {
                   belief that the consequences of one's actions will affect them
                   in this life or the next.
                 </p>
+                </div>
               </div>
               <div className="justtake_text31">
+              <div className="rahul_t">
                 <img src={profile2} alt="" />
                 <div className=" Aarav">Aarav</div>
                 <p className="justtake_text32">
@@ -618,8 +622,10 @@ const Home = () => {
                   in the belief that their actions will ultimately shape their
                   destiny.
                 </p>
+                </div>
               </div>
               <div className="justtake_text41">
+              <div className="rahul_t">
                 <img src={profile3} alt="" />
                 <div className="rahul2">Rahul kumar</div>
                 <p className="justtake_text42">
@@ -628,6 +634,7 @@ const Home = () => {
                   concept of karma. Others might argue that life events are
                   complex and influenced by various factors
                 </p>
+                </div>
               </div>
             </div>
           </div>
@@ -642,7 +649,9 @@ const Home = () => {
             </div>
             <div className="what">
               <button className="your_karma_button">
+              <NavLink to="/karmascore">
                 <p className="start_button">START NOW</p>
+                </NavLink>
               </button>
             </div>
           </div>
