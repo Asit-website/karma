@@ -5,7 +5,7 @@
 
     /* Extra small Device (Mobile Phone) */
     @media screen and (max-width: 575px) {
-        .header_flex {
+        /* .header_flex {
             flex-direction: column;
             align-items: center;
             gap: 0px;
@@ -37,7 +37,7 @@
         .header_logo {
             padding-top: 6px;
             padding-bottom: 6px;
-        }
+        } */
 
     }
 
@@ -45,7 +45,7 @@
 
     @media screen and (min-width:576px) and (max-width:991px) {
 
-
+/* 
         .header_flex {
             flex-direction: column;
             align-items: center;
@@ -81,13 +81,13 @@
         .header_logo {
             padding-top: 6px;
             padding-bottom: 6px;
-        }
+        } */
     }
 
     /* large Devices (Destops) */
     @media screen and (min-width:992px) and (max-width:1199px) {
 
-        .header_flex {
+        /* .header_flex {
             display: flex;
             justify-content: center;
             gap: 500px;
@@ -123,7 +123,7 @@
         .header_logo {
             padding-top: 6px;
             padding-bottom: 6px;
-        }
+        } */
     }
 
     /* Extra large devices (high resolution monitors) */
@@ -181,7 +181,7 @@
             justify-content: center;
             text-align: center;
             padding: 50px 0px 0px 0px;
-            height: 280px;
+            height: 80vh;
 
 
 
@@ -268,10 +268,7 @@
             justify-content: center;
             text-align: center;
             padding: 50px 0px 0px 0px;
-            height: 280px;
-
-
-
+            height: 80vh;
         }
 
         .destiny_title {
@@ -353,7 +350,7 @@
             text-align: center;
 
             padding: 70px 0px 0px 0px;
-            height: 397px;
+            height: 80vh;
 
 
 
@@ -366,6 +363,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 80vh !important;
         }
 
         .destiny_title {
@@ -430,6 +428,9 @@
             padding-bottom: 20px;
 
 
+        }
+        .Home_1{
+            /* margin: 12px 0px; */
         }
     }
 
@@ -2194,7 +2195,7 @@
         .your_karma {
             margin-top: 60px;
             background: #1B1C1D;
-            margin-bottom: 50px;
+            /* margin-bottom: 50px; */
 
         }
 
@@ -2411,7 +2412,7 @@
             margin-top: 40px;
             justify-content: center;
             text-align: center;
-            margin-bottom: 100px;
+            /* margin-bottom: 100px; */
 
         }
 
@@ -2424,7 +2425,7 @@
             background: #E0D7C8;
             background-repeat: no-repeat;
             background-size: cover;
-            margin-top: -50px;
+            /* margin-top: -50px; */
 
 
         }
@@ -2467,7 +2468,7 @@
             margin-top: 40px;
             justify-content: center;
             text-align: center;
-            margin-bottom: 100px;
+            /* margin-bottom: 100px; */
         }
 
 

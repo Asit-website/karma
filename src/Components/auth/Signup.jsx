@@ -10,9 +10,9 @@ const Signup = () => {
     <>
       <div>
         <div>
-        <div className="parentSignup">
+        <div className="parentSignup rr">
           <div className="signupImg">
-            <img className="loginimages" src={Signphoto} alt="img" />
+            <img className="loginimages jk" src={Signphoto} alt="img" />
           </div>
           <div className="signupform">
             <div className="subsignupform">

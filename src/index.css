@@ -3,6 +3,12 @@
     src: local("HelveticaNowDisplay-Regular.ttf"),
     url("./Components/Pages/Helvetica/HelveticaNowDisplay-Regular.ttf")
 }
+
+@font-face {
+    font-family: Helvetica-bold;
+    src: local("HelveticaNowDisplay-Bold.ttf"),
+    url("./Components/Pages/Helvetica/HelveticaNowDisplay-Bold.ttf")
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' ); */
 
 @font-face {
@@ -22,4 +28,214 @@
    padding: 0px;
    margin: 0px;
    box-sizing: border-box;
+}
+.destiny_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* box-shadow: 0px 4px 4px 0px #00000040; */
+
+}
+.Destiny_paragraf{
+    height: 40px !important;
+}
+.hin_eng{
+    width: 80px;
+    background-color: #E0D7C8;
+    height: 46px;
+    border-radius: 61.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+.hin_eng button{
+    color: #030208;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Inter-medium !important;
+    margin: 0px 5px;
+    border: none;
+    background-color: transparent;
+    width: 34px;
+    height: 34px;
+    border-radius: 50% !important;
+}
+.en{
+ background-color: #FFFFFF ;
+
+}
+@media only screen and (max-width:1000px){
+    .header_flex{
+        padding: 5px 50px !important;
+    }
+    .parentSignup{
+        flex-direction: column;
+    }
+    .signupImg{
+        width: 100% !important;
+    }
+    .signupImg .loginimages{
+        height: 400px !important;
+    }
+    .signupform {
+        width: 100%;
+        padding: 30px 55px !important;
+    }
+    .parentSignup{
+        position: initial !important;
+    }
+    .signupImg .signupimages{
+        height: 400px !important;
+    }
+    .destiny_flex{
+        height: 80vh !important;
+    }
+    .footer_main{
+        padding: 0px 55px !important;
+    }
+    .karmaSubscore{
+        padding: 50px 55px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .scoredes{
+        flex-wrap: wrap;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .subscoredes-para h1{
+        text-align: center !important;
+        line-height: 44px !important;
+    }
+    .subscoredes-para p{
+        text-align: center !important;
+    }
+    .scoredes .subscoredes-para{
+        width: 100% !important;
+    }
+    .percentage{
+        margin-top: 30px !important;
+    }
+    .subscoredes-img{
+        margin-top: 30px !important;
+    }
+    .hh .ytyt{
+        width: 100% !important;
+    }
+    .subecoredes_parageaph{
+        padding-top: 0px !important;
+        margin-top: 26px !important;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .header_flex{
+        padding: 5px 30px !important;
+        align-items: center;
+        flex-direction: column !important;
+    }
+    .signupform{
+        padding: 30px 30px !important;
+    }
+    .fixed-content{
+        margin-left: 0px !important;
+    }
+    .horizontal hr{
+        width: 80px !important;
+    }
+    .parentSignup{
+        margin-top: 7.5rem !important;
+    }
+    .destiny_1{
+        margin-top: 7.5rem !important;
+        padding: 0px !important;
+    }
+    .karmaTracker_paragraf1{
+        line-height: 20px !important;
+    }
+    .dropdown-content{
+        left: -46px !important;
+        padding: 20px !important;
+    }
+    .account-create{
+        margin: 0px !important;
+    }
+    .account-create-para{
+        margin-left: 0px !important;
+    }
+    .account-create-loginSign{
+        padding: 0px !important ;
+        margin-top: 15px;
+    }
+    .paragraph{
+        line-height: 17px !important;
+    }
+    .karmaTracker{
+        padding: 20px 30px !important;
+    }
+    .karmaTracker_text{
+        width: 100% !important;
+    }
+    .Text_summary{
+        padding: 10px 30px !important;
+    }
+    .usekarma{
+        padding: 0px 30px !important;
+    }
+    .Destiny_button{
+        margin-top: 30px !important;
+    }
+    .Destiny_paragraf{
+        margin-top: -32px !important;
+    }
+    .footer_flext{
+        flex-direction: column;
+    }
+    .footer_main{
+        padding: 0px 30px !important;
+    }
+    .ww{
+        margin: 15px 0px !important;
+        text-align: center !important;
+    }
+    .karmaTracker_all{
+        padding:20px 0px !important;
+    }
+    .footer_all{
+        padding-top: 40px !important;
+        padding-bottom: 0px !important;
+    }
+    .karmaSubscore{
+        padding: 50px 30px !important;
+    }
+    .subscoredes-img{
+        margin-top: 52px !important;
+    }
+    .scoredes{
+        margin-top: 40px !important;
+    }
+    .scorecontact .scorecontact-button{
+        width: 100% !important;
+        padding: 12px 20px;
+    }
+    .scorelogo{
+        align-items: center !important;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .subscoredes-img{
+        margin-top: 100px !important;
+    }
+    .scorecontact-button p{
+        font-size: 15px !important;
+    }
+    .scorecontact-a a{
+        font-size: 16px !important;
+    }
 }

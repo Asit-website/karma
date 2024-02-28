@@ -649,7 +649,7 @@ const Home = () => {
             </div>
             <div className="what">
               <button className="your_karma_button">
-              <NavLink to="/karmascore">
+              <NavLink style={{textDecoration:"none"}} to="/karmascore">
                 <p className="start_button">START NOW</p>
                 </NavLink>
               </button>
@@ -663,9 +663,9 @@ const Home = () => {
         <div>
           <div class="footer_all">
             <div class="footer_flext">
-              <div class="Home_1">Home</div>
-              <div class="about_1">About</div>
-              <div class="lets">Let’s Start</div>
+              <div class="Home_1 ww">Home</div>
+              <div class="about_1 ww">About</div>
+              <div class="lets ww">Let’s Start</div>
             </div>
           </div>
         </div>

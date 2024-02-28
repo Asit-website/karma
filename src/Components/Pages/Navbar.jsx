@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [depth,setDepth] = useState(1);
+
+  const selectTabs = () =>{
+     setDepth(1);
+     document.getElementById("sen").style.background="white";
+
+     document.getElementById("sen1").style.background="transparent";
+     
+  }
+  const selectTabs1 = () =>{
+    setDepth(2);
+    document.getElementById("sen").style.background="transparent";
+
+     document.getElementById("sen1").style.background="white";
+  }
   return (
     <>
       <div className="header_parent">
@@ -82,9 +97,13 @@ const Navbar = () => {
                   </div>
                 </div>
               </button>
-              <button className="header_Hi-En">
+              {/* <button className="header_Hi-En">
                 <span className="hindi">Hi</span> <span className="En">En</span>
-              </button>
+              </button> */}
+              <div className="hin_eng">
+                 <button onClick={selectTabs} id="sen" className="en">En</button>
+                 <button onClick={selectTabs1} id="sen1" className="hin">हि</button>
+              </div>
             </div>
           </div>
         </div>
