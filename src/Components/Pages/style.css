@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: Helvetica;
     src: url("./Helvetica/HelveticaNowDisplay-Black.ttf");
 }
@@ -6,7 +6,7 @@
 @font-face {
     font-family: 'Inter';
     src: url("./Inter/Inter-VariableFont_slnt\,wght.ttf");
-}
+} */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Inter:wght@100..900&display=swap'); */
 
@@ -26,6 +26,8 @@
 /* Link{
     color: #FFFFFF;
 } */
+
+
 
 .header_flex {
     padding: 5px 87px;
@@ -53,10 +55,15 @@
 }
 
 .navigatelink {
-    color: #ffff;
+    color: #E0D7C8;
     text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Helvetica Now Display", sans-serif;
 }
-
+.navigatelink span{
+    font-weight: 400;
+}
 .header_logo {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -77,6 +84,7 @@ button.header_account {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .account_svg {
@@ -131,7 +139,7 @@ button.header_account {
 }
 
 .account-create-heading p {
-    font-family: 'Inter' !important;
+    font-family: "Inter" !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     line-height: 17px !important;
@@ -143,6 +151,7 @@ button.header_account {
 .account-create-para {
     padding-top: 10px;
     margin-left: 15px;
+    font-family: "Inter" !important;
     /* padding: 10px; */
 }
 
@@ -209,14 +218,18 @@ button.header_account:hover .dropdown-content {
 }
 
 .dropdown-content a {
-    /* color: black; */
+    color: #FFFF;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: "Inter" !important;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    color: #1B1C1D;
 }
 
 
@@ -256,6 +269,7 @@ button.header_Hi-En {
 
 .destiny_title {
     font-family: "Helvetica Now Display", sans-serif;
+    
     font-size: 54px;
     font-weight: 800;
     line-height: 60px;
@@ -266,7 +280,7 @@ button.header_Hi-En {
 }
 
 .Destiny_paragraf {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -341,6 +355,7 @@ button.header_Hi-En {
     letter-spacing: 0em;
     text-align: left;
     margin-top: 10px;
+    color: #464038;
 }
 
 .karmaTracker_paragraf2 {
@@ -393,7 +408,7 @@ margin-bottom: 30px; */
 
 .Text_summary_paragraf2 {
 
-    width: 44em;
+    width: 52em;
 
     margin-top: 20px;
     font-family: "Inter";
@@ -422,9 +437,7 @@ margin-bottom: 30px; */
     text-align: center;
     justify-items: center;
     margin-top: 80px;
-
-
-
+    color: #464038;
 }
 
 .Text_summary_title {
@@ -486,7 +499,7 @@ margin-bottom: 30px; */
     margin-top: -16px;
     /* margin-left:490px;
   margin-right:490px; */
-    width: 56em;
+    width: 62em;
     padding: 0px 240px;
 }
 
@@ -616,7 +629,7 @@ margin-bottom: 30px; */
     width: 253px;
     /* height: 154px;  */
     font-family: "Inter";
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
@@ -644,7 +657,7 @@ margin-bottom: 30px; */
 .justtake_text22 {
     width: 254px;
     font-family: "Inter";
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
@@ -671,7 +684,7 @@ margin-bottom: 30px; */
     width: 254px;
     /* height: 139px; */
     font-family: "Inter";
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
@@ -690,14 +703,14 @@ margin-bottom: 30px; */
     margin-right: 20px;
     padding-left: 15px;
     padding-top: 30px;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 .justtake_text42 {
     width: 254px;
     /* height: 133px; */
     font-family: "Inter";
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
@@ -712,7 +725,7 @@ margin-bottom: 30px; */
     font-family: "Inter";
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
@@ -740,7 +753,7 @@ margin-bottom: 30px; */
 }
 
 .Aarav {
-    font-family: " Inter";
+    font-family: "Inter";
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -823,12 +836,12 @@ margin-bottom: 30px; */
 
 .start_button {
     font-family: "Inter";
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-
+   
     padding: 15px 20px 10px 10px;
     padding-left: 50px;
     padding-right: 50px;
@@ -972,12 +985,12 @@ margin-bottom: 30px; */
 
 
 
-
 /* <----------------Question1----------------> */
 
 .parentlordshiva {
     /* background: #FBFBF8;
     height: 100vh; */
+    margin-top: 4.5rem;
 }
 
 .lordshiva {
@@ -1014,9 +1027,21 @@ margin-bottom: 30px; */
     text-align: left;
 
 }
-
 .sublord .paraChoose {
-    font-family: " Inter";
+    font-family: "Inter";
+    font-size: 15px;
+    /* font-weight: 400; */
+    line-height: 18.36px;
+    /* letter-spacing: 0em; */
+    text-align: left;
+    margin-top: 15px;
+    /* padding-right: 128px; */
+    color: #464038;
+    width: 70%;
+}
+
+/* .sublord .paraChoose {
+    font-family: "Inter";
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -1024,23 +1049,27 @@ margin-bottom: 30px; */
     text-align: left;
     margin-top: 15px;
     padding-right: 128px;
-    /* color: background: #464038; */
-    ;
-}
+} */
 
 
 
 .numberquestion {
     display: flex;
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 .numberquestion .imgquestion {
-    width: Fill (398px);
+    /* width: Fill (398px);
     height: Hug (22px);
-    gap: 10px;
+    gap: 10px; */
+    width: 17px;
 }
-
+.singer p{
+  color: #1B1C1D;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Inter";
+}
 .numberquestion .paraquestion {
     font-family: "Inter";
     font-size: 16px;
@@ -1049,6 +1078,7 @@ margin-bottom: 30px; */
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
+    /* margin-top: 15px; */
 }
 
 .lordshivaright {
@@ -1121,9 +1151,13 @@ margin-bottom: 30px; */
 
 .lordquestionflex:hover {
     background: linear-gradient(180deg, #93526E 0%, #93526E 100%);
-    color: white;
+    /* color: white; */
+    transition: .3s;
 }
-
+.lordquestionflex:hover p{
+    color: white;
+    transition: .3s;
+}
 .borderA:hover {
     /* color: linear-gradient(180deg, #93526E 0%, #93526E 100%);;
     background: white */
@@ -1148,9 +1182,13 @@ margin-bottom: 30px; */
     border-radius: 12px;
     gap: 10px;
     padding: 15px;
-    width: 25%;
+    width: 156px;
     background: #DDD8C2;
     border: 1px solid #DDD8C2;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 32px;
 }
 
 /* <------------ Question2 -------------> */
@@ -1183,6 +1221,7 @@ margin-bottom: 30px; */
     background-size: cover;
     background-position: center;
     height: 100vh;
+    margin-top: 75px;
 }
 
 .karmaSubscore {
@@ -1202,7 +1241,7 @@ margin-bottom: 30px; */
 }
 
 .scorelogo-heading h1 {
-    font-family: ' Inter';
+    font-family: 'Inter';
     font-size: 32px;
     font-weight: 600;
     line-height: 39px;
@@ -1218,8 +1257,23 @@ margin-bottom: 30px; */
 
 .scorelogo {
     color: white;
+    margin-top: 40px;
 }
-
+.percentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+.percentage p{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Inter";
+}
 .scoredes {
     display: flex;
     justify-content: flex-start;
@@ -1227,23 +1281,33 @@ margin-bottom: 30px; */
 }
 
 .scoredes .subscoredes-para {
-    width: 626px;
+    /* width: 626px; */
     height: 106px;
+    width: 76%;
     top: 379px;
     left: 100px;
     gap: 16px;
 
 }
-
+.hh .ytyt{
+    width: 92%;
+}
+.hh{
+   justify-content: flex-start !important;
+   margin-top: 48px !important;
+}
 .subscoredes-para h1 {
     color: #FFFFFF;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 36px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
 
+}
+.subecoredes_parageaph{
+  padding-top: 26px;
 }
 
 .subscoredes-para p {
@@ -1265,8 +1329,10 @@ margin-bottom: 30px; */
 }
 
 .horizontal {
-    padding: 30px 0px;
-    width: 76%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    /* padding: 15px 0px;
+    width: 100%; */
 }
 
 .horizontal hr {
@@ -1288,8 +1354,20 @@ margin-bottom: 30px; */
     border-radius: 12px;
     gap: 10px;
     background: #E0D7C8;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    margin-top: 40px;
 }
-
+.scorecontact .scorecontact-a{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Inter";
+    text-transform: uppercase;
+}
 .scorecontact-button p {
     font-family: "Inter";
     font-size: 20px;
@@ -1357,7 +1435,7 @@ margin-bottom: 30px; */
 }
 
 .thanku-caintent {
-    width: 717px;
+    /* width: 717px; */
     height: 304px;
     border-radius: 5px;
     /* border: 1px solid red; */
@@ -1377,7 +1455,7 @@ margin-bottom: 30px; */
 .thanku-heading {
     color: #1B1C1D;
 
-    background: #FFFFFF;
+    background:#DDD8C2;
     text-align: center;
     font-family: "Inter";
     font-size: 25px;
@@ -1385,53 +1463,44 @@ margin-bottom: 30px; */
     line-height: 30px;
     letter-spacing: 0em;
     /* text-align: left; */
-    padding: 10px;
-    margin: 10px
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    
 }
 
 
-p.thanku-para {
-    color: white;
-    text-align: center;
+.thanku-para{
     font-family: "Inter";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    /* text-align: left; */
-
-    /* font-family: Inter;
-font-size: 24px;
-font-weight: 300;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left; */
-
+    font-weight: 300;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
 }
 
-span#bold-para {
+/* span#bold-para {
     font-size: 21px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
     font-family: "Inter";
+} */
+
+#bold-para{
+    /* font-weight: 600; */
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
 }
 
 .thanku-contact {
-    /* color: white;
-    text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 30px;
-    letter-spacing: 0em; */
-    color: white;
-    text-align: center;
-    font-family: "Inter";
-    font-size: 15px;
-    font-weight: 250;
-    line-height: 30px;
-    letter-spacing: 0em;
-    margin: 15px;
-
+   color: #FFFFFF;
+   font-size: 24px;
+   font-family: "Inter";
+   text-align: center;
+   margin-top: 35px;
+   font-weight: 300;
+   text-decoration: underline;
 }

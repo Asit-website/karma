@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div>
+      <div className="header_parent">
         <div class="header_all">
           <div class="header_flex">
             <div class="header_text">
               <Link className="navigatelink" to="/">
-                Karma Tracker
+                Karma <span>Tracker</span> 
               </Link>
             </div>
             <div class="header_logo">
@@ -77,7 +77,7 @@ const Navbar = () => {
                       {/* Create Account */}
                     </button>
                     <button className="loginbutton">
-                      <Link to="/signup">Login</Link>
+                      <Link to="/login">Login</Link>
                     </button>
                   </div>
                 </div>

@@ -1,7 +1,5 @@
-@font-face {
+/* @font-face {
     font-family: 'Helvetica', sans-serif;
-    /* src: url("./Helvetica/HelveticaNowDisplay-Black.eot"); */
-    /* src: url("./Helvetica/HelveticaNowDisplay-Black.ttf"); */
     src: url("./Helvetica/HelveticaNowDisplay-Light.eot");
     src: url("./Helvetica/HelveticaNowDisplay-Light.ttf");
 }
@@ -9,7 +7,7 @@
 @font-face {
     font-family: 'Inter';
     src: url("./Inter/Inter-VariableFont_slnt\,wght.ttf");
-}
+} */
 
 
 * {
@@ -18,12 +16,23 @@
     box-sizing: border-box;
     /* font-family: 'Helvetica',sans-serif; */
 }
-
+.header_parent {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
 .parentSignup {
     /* border: 1px solid red; */
     display: flex;
+    margin-top: 4.5rem;
     width: 100%;
     background-color: #FBFBF8 !important;
+    position: fixed;
+    top: 0;
+    bottom: 0px;
 }
 
 .signupImg {
@@ -32,18 +41,31 @@
     height: auto;
     /* height: 1080px */
 }
-
+/* 
 .signupImg img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+} */
+
+.signupImg .signupimages{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
+.signupImg  .loginimages{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
 
 .signupform {
     /* padding: 300px 0px 0px 0px; */
     /* margin: 200px 0px 0px 200px ;   */
     /* width: 100%; */
     margin: auto;
+    /* height: auto; */
 }
 
 .subsignupform {
@@ -51,7 +73,7 @@
     /* width: 300px; */
     /* width: 416px */
     /* border: 1px solid red; */
-    padding: 30px;
+    /* padding: 30px; */
     /* margin-left: 58px;
     margin-right: 58px; */
     /* padding-left: 63px;
@@ -60,9 +82,10 @@
 
 .signupform h1 {
     text-align: center;
-    font-family: 'Helvetica', sans-serif;
+    font-family: Helvetica ;
+    /* font-family: 'Helvetica', sans-serif; */
     font-size: 32px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
@@ -80,7 +103,7 @@
 .inputfont .svgfont {
     position: relative;
     left: 17px;
-    top: 50px;
+    top: 40px;
 }
 
 .inputfont {
@@ -91,52 +114,75 @@
     border: 1px solid #101010;
     /* width: Fixed (400px); */
     width: 100%;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
     /* padding-top: 10px; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: Hug (64px);
     /* top: 359px; */
     /* left: 880px; */
     padding: 20px;
+    margin: -5px 0px;
+    /* padding: 16px; */
     border-radius: 6px;
     gap: 10px;
-    font-family: 'Helvetica', sans-serif;
 }
-
+.inputfont input::placeholder{
+    color: #1B1C1D;
+    font-family: "Inter";
+    font-size: 16px;
+}
 .inputfont input[placeholder="Email"],
 input[placeholder="password"],
 input[placeholder="Confirm Password"],
 input[placeholder="First Name"],
 input[placeholder="Last Name"] {
     padding-left: 44px;
-    font-size: 12px;
+    font-size: 16px;
+    color: #1B1C1D;
+    font-family: "Inter";
 }
 
 .achortag a {
     display: flex;
     justify-content: right;
     margin-top: 10px;
-    font-family: Wix Madefor Text;
+    font-family: "Inter";
     font-size: 17px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0px;
     text-align: left;
     color: #926D57;
+
 }
 
-.forminput button {
+/* .forminput button {
     font-family: "Inter", sans-serif;
     width: 100%;
-    /* width: 100%; */
     height: 55px;
     top: 588px;
     left: 880px;
     border-radius: 12px;
     background-color: #464038;
     color: white;
+} */
+
+.forminput button {
+    font-family: "Inter";
+    width: 100%;
+    font-weight: 500;
+    height: 55px;
+    /* top: 588px; */
+    /* left: 880px; */
+    border-radius: 12px;
+    background-color: #464038;
+    color: white;
 }
 
 .termcondition {
+    color: #1B1C1D;
     margin-top: 20px;
     /* width: 247px; */
     /* height: 19px; */
@@ -147,6 +193,9 @@ input[placeholder="Last Name"] {
     line-height: 19px;
     letter-spacing: 0px;
     text-align: center;
+}
+.termcondition a{
+    color:#1B1C1D;
 }
 
 .forminput hr {
@@ -176,10 +225,18 @@ input[placeholder="Last Name"] {
     padding: 10px;
     margin-top: 20px;
 }
+.paraor_or{
+font-family: "Inter";
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0px;
+/* text-align: left; */
 
+}
 .formgoogle {
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     justify-content: center;
     color: #464038;

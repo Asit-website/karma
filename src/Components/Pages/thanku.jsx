@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-const thanku = () => {
+const Thanku = () => {
+  const navigate = useNavigate();
+  useEffect(()=>{
+     setTimeout(() => {
+         navigate("/question");
+     }, 5000);
+  },[])
   return (
     <>
       <div className="thanku">
@@ -35,4 +42,4 @@ const thanku = () => {
   );
 };
 
-export default thanku;
+export default Thanku;

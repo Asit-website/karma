@@ -1,5 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Login from "./Components/auth/Signup";
+// import Signup from "./Components/auth/Login";
 import Login from "./Components/auth/Login";
 import Signup from "./Components/auth/Signup";
 import Question1 from "./Components/Pages/Question1";
@@ -20,6 +22,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/question" element={<Question1/>}/>
+          <Route path="/karmascore" element={<Karmascore/>}/>
+          <Route path="/karmascore1" element={<Karmascore1/>}/>
+          <Route path="/thanku" element={<Thanku/>}/>
         </Routes>
       </BrowserRouter>
     </div>
