@@ -24,9 +24,9 @@ const Home = () => {
               <p className="Destiny_paragraf">
                 Track, visualize, and improve your personal productivity
               </p>
-              <button className="Destiny_button">
+             <NavLink to="/question"><button className="Destiny_button">
                 <p className="Destiny_button_text">START OF THE TOUR</p>
-              </button>
+              </button></NavLink>
             </div>
           </div>
         </div>

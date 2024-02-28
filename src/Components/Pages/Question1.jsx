@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import photo from "../../Assest/image 32.png";
 import ican from "../../Assest/ican.png";
 import { NavLink } from "react-router-dom";
+import Loading from "../Loading";
 
 const Question1 = () => {
   const [count, setCount] = useState(1);
@@ -16,6 +17,21 @@ const Question1 = () => {
       setCurrentTab(currentTab + 1);
     }
   };
+
+  useEffect(()=>{
+    if (currentTab < 3) {
+      // setCount(count + 1);
+      // setCurrentTab(currentTab + 1);
+      <Loading/>
+    }
+  },[])
+
+  const [song,setSong] = useState(0);
+
+  const handleClick = () =>{
+     setSong(0);
+     document.getElementById("one").style.background ="linear-gradient(180deg, #93526E 0%, #93526E 100%)";
+  }
 
   return (
     <>
@@ -50,7 +66,7 @@ const Question1 = () => {
                   <p className="headingheading">
                     What does karma mean in Sanskrit?
                   </p>
-                  <div className="lordquestionflex">
+                  <div  className="lordquestionflex">
                     <div className="borderA">
                       <svg
                         width="30"

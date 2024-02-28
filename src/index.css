@@ -67,6 +67,9 @@
  background-color: #FFFFFF ;
 
 }
+.forminput button{
+    margin-top: 25px !important;
+}
 @media only screen and (max-width:1000px){
     .header_flex{
         padding: 5px 50px !important;
@@ -132,6 +135,61 @@
         padding-top: 0px !important;
         margin-top: 26px !important;
     }
+    .lordshiva{
+        flex-direction: column;
+        height: 100% !important;
+    }
+    .lordshivaleft{
+        width: 100% !important;
+        height: 55vh !important;
+    }
+    .lordshivaright{
+        width: 100% !important;
+        padding: 30px !important;
+    }
+    .sublord{
+        margin: 70px 0px !important;
+    }
+    .sublord .img{
+        width: auto !important;
+        display: block;
+        margin: auto;
+    }
+    .lordDesc{
+        text-align: center !important;
+    }
+    .sublord .paraIns{
+        text-align: center !important;
+    }
+    .sublord .paraChoose{
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .numberquestion{
+        align-items: center !important;
+       justify-content: center !important;
+    }
+    .headingright{
+        text-align: center !important;
+    }
+    .lordsubquestion .headingheading{
+        text-align: center !important;
+    }
+    .lordsubquestion{
+        width: 100% !important;
+    }
+    .lordquestion{
+        margin-left: 0px !important;
+    }
+    .thanku{
+        padding: 0px 55px !important;
+    }
+    .rr .jk{
+        position: initial !important;
+    }
+    .signupImg .loginimages{
+       width: 100% !important;
+    }
 }
 
 @media only screen and (max-width:540px){
@@ -165,6 +223,9 @@
     .dropdown-content{
         left: -46px !important;
         padding: 20px !important;
+    }
+    .sublord{
+       padding: 30px !important;
     }
     .account-create{
         margin: 0px !important;
@@ -230,6 +291,27 @@
     .scorelogo{
         align-items: center !important;
     }
+    .lordshivaleft{
+        height: 55vh !important;
+    }
+    .sublord .img{
+        width: auto !important;
+    }
+    .parentlordshiva{
+        margin-top: 7.5rem !important;
+    }
+    .thanku{
+        padding: 0px 30px !important;
+    }
+    .thanku-heading{
+        font-size: 20px !important;
+    }
+    .thanku-para{
+        font-size: 20px !important;
+    }
+    .thanku-contact{
+        font-size: 20px !important;
+    }
 }
 
 @media only screen and (max-width:450px){
@@ -255,6 +337,6 @@
         line-height: 24px !important;
     }
     .percentage{
-        margin-top: 0px !important;
+        margin-top: -15px !important;
     }
 }

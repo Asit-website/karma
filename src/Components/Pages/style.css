@@ -256,6 +256,8 @@ button.header_Hi-En {
     height: 115vh;
     position: relative;
     top: 2.5px !important;
+    position: fixed;
+    top: 0px;
 }
 /* <---------------------home------------------> */
 /* section2 */
@@ -563,7 +565,10 @@ margin-bottom: 30px; */
 }
 
 .getdeep_text {
-    border: 0.5px solid #FFFFFF;
+    /* border: 0.5px solid #FFFFFF; */
+    background-image: url('../../Assest/tred.png');
+    background-size: cover;
+    background-position: center;
     margin: 10px;
     width: 149px;
     height: 187px;
@@ -588,7 +593,8 @@ margin-bottom: 30px; */
     justify-content: center;
     margin-left: 40px;
     padding-top: 10px;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    color: #E0D7C8;
 }
 
 
@@ -1006,7 +1012,7 @@ margin-bottom: 30px; */
     /* border: 1px solid red; */
     width: 100%;
     background: #FBFBF8;
-    height: 100vh;
+    height: 100%;
 }
 
 .lordshivaleft {
@@ -1155,16 +1161,19 @@ margin-bottom: 30px; */
     display: flex;
     align-items: center;
     text-align: start;
-    width: Fixed (595px);
+    max-width: 595px;
+    width: 100%;
     /* height: Hug (75px); */
     padding: 10px;
     border-radius: 8px;
+    height: 72px !important;
     /* border: 1px; */
     gap: 16px;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    /* margin-bottom: 15px; */
+    margin-top: 18px;
     /* color: white */
     background: #FFFFFF;
+    cursor: pointer;
 
 }
 
@@ -1190,6 +1199,7 @@ margin-bottom: 30px; */
 .questionbutton {
     display: flex;
     justify-content: end;
+    padding: 20px 0px;
 }
 
 .questionbutton button {
