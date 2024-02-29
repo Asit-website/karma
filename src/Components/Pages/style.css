@@ -192,11 +192,13 @@ button.header_account {
 }
 
 .account-create-loginSign .createbutton:hover {
-    background-color: #ffff;
+    background-color: #E0D7C8;
     color: #1B1C1D;
     cursor: pointer;
     border-radius: 8px;
     font-family: Inter;
+    border: none !important;
+    transition: .3s;
 }
 
 .account-create-loginSign .loginbutton {
@@ -211,11 +213,13 @@ button.header_account {
 }
 
 .account-create-loginSign .loginbutton:hover {
-    background-color: #ffff;
+    background-color: #E0D7C8;
     color: #1B1C1D;
     cursor: pointer;
     border-radius: 8px;
     font-family: Inter;
+    border: none !important;
+    transition: .3s;
 }
 
 
