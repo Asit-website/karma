@@ -221,7 +221,10 @@ button.header_account {
     border: none !important;
     transition: .3s;
 }
-
+.footer_flext a{
+    text-decoration: none !important;
+    color: #1B1C1D;
+}
 
 button.header_account:hover .dropdown-content {
     display: block;
@@ -1160,7 +1163,7 @@ margin-bottom: 30px; */
     display: flex;
     align-items: center;
     text-align: start;
-    max-width: 595px;
+    /* max-width: 595px; */
     width: 100%;
     /* height: Hug (75px); */
     padding: 10px;
