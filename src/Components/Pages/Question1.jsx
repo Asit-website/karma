@@ -244,7 +244,7 @@ const Question1 = () => {
             <>
               <div className="lordshivaright">
                 <div className="lordquestion">
-                  <p className="headingright">Question {count} of {count} </p>
+                  <p className="headingright">Question {count} of 4 </p>
 
                   <div className="lordsubquestion">
 
