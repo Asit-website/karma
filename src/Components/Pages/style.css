@@ -1179,9 +1179,14 @@ margin-bottom: 30px; */
 
 }
 .checked{
-    background-color: rgb(120, 179, 83);
+   
+    background: linear-gradient(180deg, #93526E 0%, #93526E 100%);
+
     color:white;
     box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+.checked1{
+    color: white !important;
 }
 /* .lordquestionflex:hover {
     background: red;

@@ -9,7 +9,7 @@ import Karmascore from "./karmascore";
 const Question1 = () => {
   const navigate = useNavigate();
   const [count, setCount] = useState(1);
-  const [currentTab, setCurrentTab] = useState(1);
+  const [currentTab, setCurrentTab] = useState(0);
   const [clickedOption, setClickedOption] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showResult, setShowResult] = useState(false);
@@ -26,9 +26,16 @@ const Question1 = () => {
     if (currentTab < QuizData.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setCount(count + 1);
+      setClickedOption(0);
       setCurrentTab(currentTab + 1);
+      // setShowResult(false)
     } else {
       setShowResult(true);
+      setCurrentTab(0)
+      //  setClickedOption(0) ? setCurrentTab(0) : setCurrentTab(currentTab+1)
+      // clickedOption(0)
+      // setCurrentTab(0)
+      // setCurrentQuestion(0);
     }
   };
 
@@ -42,43 +49,162 @@ const Question1 = () => {
     }
   }, []);
 
-  const [song, setSong] = useState(0);
 
-  const handleClick = () => {
-    setSong(0);
-    document.getElementById("one").style.background =
-      "linear-gradient(180deg, #93526E 0%, #93526E 100%)";
-  };
+
+  
 
   const QuizData = [
     {
       question: "Which language runs in a web browser?",
-      options: ["Java", "C", "Python", "JavaScript"],
+      options: [
+        // "Central Style Sheets",
+        // "Cascading Style Sheets",
+        // "Cascading Simple Sheets",
+        // "Cars SUVs Sailboats",
+        {
+          id:1,
+          name:"Central Style Sheets",
+           img:"images/df.svg"
+        },
+        {
+          id:2,
+          name:"Central Stylse Sheets",
+          svg:"svg",
+          img:"images/df6.svg"
+        },
+        {
+          id:3,
+          name:"hdhdhd",
+          svg:"svg1",
+          img:"images/df7.svg"
+        },
+        {
+          id:4,
+          name:"namdhdh",
+          svg:"svg5",
+          img:"images/df8.svg"
+        }
+      ],
       answer: 4,
     },
     {
       question: "What does CSS stand for?",
       options: [
-        "Central Style Sheets",
-        "Cascading Style Sheets",
-        "Cascading Simple Sheets",
-        "Cars SUVs Sailboats",
+        // "Central Style Sheets",
+        // "Cascading Style Sheets",
+        // "Cascading Simple Sheets",
+        // "Cars SUVs Sailboats",
+        {
+          id:1,
+          name:"Central Style Sheets",
+           img:"images/df.svg"
+        },
+        {
+          id:2,
+          name:"Central Stylse Sheets",
+          svg:"svg",
+          img:"images/df6.svg"
+        },
+        {
+          id:3,
+          name:"hdhdhd",
+          svg:"svg1",
+          img:"images/df7.svg"
+        },
+        {
+          id:4,
+          name:"namdhdh",
+          svg:"svg5",
+          img:"images/df8.svg"
+        }
+      ],
+      opt:[
+        ` <svg
+        width="30"
+        height="30"
+        viewBox="0 0 35 35"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="17.5"
+          cy="17.5"
+          r="17"
+          fill="white"
+          stroke="#E0D7C8"
+        />
+        <path
+          d="M12.8267 24H10.4972L15.7315 9.45455H18.267L23.5014 24H21.1719L17.0597 12.0966H16.946L12.8267 24ZM13.2173 18.304H20.7741V20.1506H13.2173V18.304Z"
+          fill="#926D57"
+        />
+      </svg>`
       ],
       answer: 2,
     },
     {
       question: "What does HTML stand for?",
       options: [
-        "Hypertext Markup Language",
-        "Hypertext Markdown Language",
-        "Hyperloop Machine Language",
-        "Helicopters Terminals Motorboats Lamborginis",
+        // "Central Style Sheets",
+        // "Cascading Style Sheets",
+        // "Cascading Simple Sheets",
+        // "Cars SUVs Sailboats",
+        {
+          id:1,
+          name:"Central Style Sheets",
+           img:"images/df.svg"
+        },
+        {
+          id:2,
+          name:"Central Stylse Sheets",
+          svg:"svg",
+          img:"images/df6.svg"
+        },
+        {
+          id:3,
+          name:"hdhdhd",
+          svg:"svg1",
+          img:"images/df7.svg"
+        },
+        {
+          id:4,
+          name:"namdhdh",
+          svg:"svg5",
+          img:"images/df8.svg"
+        }
       ],
       answer: 1,
     },
     {
       question: "What year was JavaScript launched?",
-      options: ["1996", "1995", "1994", "none of the above"],
+      options: [
+        // "Central Style Sheets",
+        // "Cascading Style Sheets",
+        // "Cascading Simple Sheets",
+        // "Cars SUVs Sailboats",
+        {
+          id:1,
+          name:"Central Style Sheets",
+           img:"images/df.svg"
+        },
+        {
+          id:2,
+          name:"Central Stylse Sheets",
+          svg:"svg",
+          img:"images/df6.svg"
+        },
+        {
+          id:3,
+          name:"hdhdhd",
+          svg:"svg1",
+          img:"images/df7.svg"
+        },
+        {
+          id:4,
+          name:"namdhdh",
+          svg:"svg5",
+          img:"images/df8.svg"
+        }
+      ],
       answer: 2,
     },
   ];
@@ -102,7 +228,7 @@ const Question1 = () => {
                     <img src={ican} alt="" className="imgquestion" />
                   </div>
                   <div>
-                    <p className="paraquestion"> No. of Questions: 01 </p>
+                    <p className="paraquestion"> No. of Questions: 0{count} </p>
                   </div>
                 </div>
               </div>
@@ -121,9 +247,15 @@ const Question1 = () => {
                   <p className="headingright">Question {count} of 3 </p>
 
                   <div className="lordsubquestion">
+
                     <p className="headingheading">
-                      What does karma mean in Sanskrit?
+                      {/* What does karma mean in Sanskrit? */}
+                      {
+
+                      QuizData[currentQuestion].question
+                      }
                     </p>
+
                     {QuizData[currentQuestion].options.map((prop, i) => {
                       return (
                         <>
@@ -135,7 +267,8 @@ const Question1 = () => {
                             onClick={() => setClickedOption(i + 1)}
                           >
                             <div className="borderA">
-                              <svg
+                             
+                              {/* <svg
                                 width="30"
                                 height="30"
                                 viewBox="0 0 35 35"
@@ -153,19 +286,25 @@ const Question1 = () => {
                                   d="M12.8267 24H10.4972L15.7315 9.45455H18.267L23.5014 24H21.1719L17.0597 12.0966H16.946L12.8267 24ZM13.2173 18.304H20.7741V20.1506H13.2173V18.304Z"
                                   fill="#926D57"
                                 />
-                              </svg>
+                              </svg> */}
+                             <img src={prop.img} alt="" />
                             </div>
                             <div className="singer">
-                              <p> {prop} </p>
+                              <p    className={` ${
+                              clickedOption == i + 1 ? "checked1" : null
+                            }`}
+                            key={i}
+                            onClick={() => setClickedOption(i + 1)}> {prop.name} </p>
                             </div>
                           </button>
                         </>
                       );
                     })}
+                   
 
 
                     <div className="questionbutton">
-                      <button onClick={increaseCount}> Next </button>
+                      <button  onClick={increaseCount}> Next </button>
                     </div>
                   </div>
                 </div>
