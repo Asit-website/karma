@@ -649,7 +649,7 @@ const Home = () => {
             </div>
             <div className="what">
               <button className="your_karma_button">
-              <NavLink style={{textDecoration:"none"}} to="/karmascore">
+              <NavLink style={{textDecoration:"none"}} to="/question">
                 <p className="start_button">START NOW</p>
                 </NavLink>
               </button>

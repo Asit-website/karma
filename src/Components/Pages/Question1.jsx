@@ -68,19 +68,19 @@ const Question1 = () => {
         },
         {
           id:2,
-          name:"Central Stylse Sheets",
+          name:"Song the site",
           svg:"svg",
           img:"images/df6.svg"
         },
         {
           id:3,
-          name:"hdhdhd",
+          name:"Song is good",
           svg:"svg1",
           img:"images/df7.svg"
         },
         {
           id:4,
-          name:"namdhdh",
+          name:"the title is good",
           svg:"svg5",
           img:"images/df8.svg"
         }
@@ -96,48 +96,27 @@ const Question1 = () => {
         // "Cars SUVs Sailboats",
         {
           id:1,
-          name:"Central Style Sheets",
+          name:"side",
            img:"images/df.svg"
         },
         {
           id:2,
-          name:"Central Stylse Sheets",
+          name:"side1",
           svg:"svg",
           img:"images/df6.svg"
         },
         {
           id:3,
-          name:"hdhdhd",
+          name:"This site",
           svg:"svg1",
           img:"images/df7.svg"
         },
         {
           id:4,
-          name:"namdhdh",
+          name:"lite",
           svg:"svg5",
           img:"images/df8.svg"
         }
-      ],
-      opt:[
-        ` <svg
-        width="30"
-        height="30"
-        viewBox="0 0 35 35"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="17.5"
-          cy="17.5"
-          r="17"
-          fill="white"
-          stroke="#E0D7C8"
-        />
-        <path
-          d="M12.8267 24H10.4972L15.7315 9.45455H18.267L23.5014 24H21.1719L17.0597 12.0966H16.946L12.8267 24ZM13.2173 18.304H20.7741V20.1506H13.2173V18.304Z"
-          fill="#926D57"
-        />
-      </svg>`
       ],
       answer: 2,
     },

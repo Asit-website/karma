@@ -20,10 +20,10 @@ const Login = () => {
                   <h1>Login</h1>
                   <div className="forminput">
                     <div className="inputfont">
-                      <svg
-                        className="svgfont"
-                        width="18"
-                        height="20"
+                    <svg
+                        className="svgfont sbh"
+                        width="24"
+                        height="24"
                         viewBox="0 0 24 22"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"

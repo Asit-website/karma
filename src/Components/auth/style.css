@@ -105,7 +105,9 @@
     left: 17px;
     top: 40px;
 }
-
+.sbh{
+    top: 42px !important;
+}
 .inputfont {
     width: 100%;
 }
@@ -138,12 +140,15 @@ input[placeholder="password"],
 input[placeholder="Confirm Password"],
 input[placeholder="First Name"],
 input[placeholder="Last Name"] {
-    padding-left: 44px;
+    padding-left: 47px;
     font-size: 16px;
     color: #1B1C1D;
     font-family: "Inter";
 }
-
+.achortag{
+    position: relative;
+    top: 15px;
+}
 .achortag a {
     display: flex;
     justify-content: right;
@@ -179,11 +184,13 @@ input[placeholder="Last Name"] {
     border-radius: 12px;
     background-color: #464038;
     color: white;
+    border: none;
+    outline: none;
 }
 
 .termcondition {
     color: #1B1C1D;
-    margin-top: 20px;
+    margin-top: 28px;
     /* width: 247px; */
     /* height: 19px; */
     /* border: 1px solid red; */
@@ -236,7 +243,7 @@ letter-spacing: 0px;
 }
 .formgoogle {
     width: 100%;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     color: #464038;

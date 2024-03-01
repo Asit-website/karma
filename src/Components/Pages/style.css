@@ -288,6 +288,8 @@ button.header_Hi-En {
 
 .destiny_title {
     /* font-family: "Helvetica Now Display", sans-serif; */
+    /* font-family: Helvetica-bold; */
+    /* font-family: Helvetica ; */
     font-family: Helvetica-bold;
     font-size: 54px;
     font-weight: 800;
@@ -319,7 +321,7 @@ button.header_Hi-En {
     border-radius: 12px;
     margin-top: 20px;
     border: 1px solid #DE483A;
-    padding: 12px 11px 11px 11px;
+    padding: 12px 16px 12px 16px;
     color: #FFFFFF;
 
 }
@@ -353,19 +355,22 @@ button.header_Hi-En {
 }
 
 .karmaTracker {
-    background: linear-gradient(90deg, #DDD8C2 0%, rgba(255, 255, 255, 0.57) 100%);
+    background: linear-gradient(90deg, #dcdad0 0%, rgba(255, 255, 255, 0.57) 100%);
     padding: 80px 100px;
     display: block;
     margin: auto;
 }
 
 .karmaTracker_heading {
-    font-family: "Helvetica Now Display", sans-serif;
+    /* font-family: "Helvetica Now Display", sans-serif; */
+    /* font-family: Helvetica ; */
+    font-family: Helvetica-bold;
     font-size: 34px;
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 0em;
     color: #1B1C1D;
+    text-transform: uppercase;
 }
 
 .karmaTracker_paragraf1 {
@@ -462,7 +467,8 @@ margin-bottom: 30px; */
 }
 
 .Text_summary_title {
-    font-family: "Helvetica Now Display", sans-serif;
+    /* font-family: "Helvetica Now Display", sans-serif; */
+    font-family: Helvetica-bold;
     font-size: 34px;
     font-weight: 700;
     line-height: 50px;
@@ -494,7 +500,9 @@ margin-bottom: 30px; */
 .usekarma_title {
     /* width: 452px;  */
     /* height: 40px; */
-    font-family: "Helvetica Now Display", sans-serif;
+    /* font-family: "Helvetica Now Display", sans-serif;
+     */
+     font-family: Helvetica-bold;
     font-size: 34px;
     font-weight: 700;
     line-height: 50px;
@@ -544,7 +552,8 @@ margin-bottom: 30px; */
     height: 40px;
     top: 2377px;
     left: 522px;
-    font-family: "Helvetica Now Display", sans-serif;
+    /* font-family: "Helvetica Now Display", sans-serif; */
+    font-family: Helvetica-bold;
     font-size: 34px;
     font-weight: 700;
     line-height: 50px;
@@ -626,7 +635,8 @@ margin-bottom: 30px; */
     /* top: 3029px; */
     /* margin-left: 475.5px; */
 
-    font-family: "Helvetica Now Display", sans-serif;
+    /* font-family: "Helvetica Now Display", sans-serif; */
+    font-family: Helvetica-bold;
     font-size: 28px;
     font-weight: 700;
     line-height: 41px;
@@ -814,42 +824,29 @@ margin-bottom: 30px; */
 }
 
 .your_karma_title {
-    font-family: "Helvetica Now Display", sans-serif;
+    /* font-family: "Helvetica Now Display", sans-serif; */
+    font-family: Helvetica-bold;
     font-size: 34px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
-
-
-
     height: 24px;
-
     color: #FFFFFF;
     padding-top: 50px;
     padding-bottom: 20px;
-
 }
 
 .your_karma_button {
-
-
-
     justify-content: center;
     text-align: center;
     border-radius: 40px;
-
     border: 1px solid #DDD8C2;
-
-
     background: #DDD8C2;
-    padding: 4px 5px 4px 4px;
+    padding: 4px 23px 4px 23px;
     /* margin-left: 660px; */
     margin-top: 40px;
     margin-bottom: 50px;
-
-
-
 }
 
 .what {
