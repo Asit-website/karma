@@ -244,7 +244,7 @@ const Question1 = () => {
             <>
               <div className="lordshivaright">
                 <div className="lordquestion">
-                  <p className="headingright">Question {count} of 3 </p>
+                  <p className="headingright">Question {count} of {count} </p>
 
                   <div className="lordsubquestion">
 
@@ -304,7 +304,7 @@ const Question1 = () => {
 
 
                     <div className="questionbutton">
-                      <button  onClick={increaseCount}> Next </button>
+                      <button  onClick={increaseCount}> {count == 4 ? "Submit" : "Next"} </button>
                     </div>
                   </div>
                 </div>
