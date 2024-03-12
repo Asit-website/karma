@@ -12,14 +12,16 @@ import Karmascore1 from "./Components/Pages/karmascore1";
 import Thanku from "./Components/Pages/thanku";
 import Navbar from "./Components/Pages/Navbar";
 import Home from "./Components/Pages/Home";
+import { useState } from "react";
 
 function App() {
+  const [index,setIndex] = useState(false);
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+        <Navbar index={index} setIndex={setIndex} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home index={index} setIndex={setIndex} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/question" element={<Question1/>}/>

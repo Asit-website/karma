@@ -323,9 +323,11 @@ button.header_Hi-En {
     border: 1px solid #DE483A;
     padding: 12px 16px 12px 16px;
     color: #FFFFFF;
-
+    cursor: pointer;
 }
-
+#sen{
+    background-color: white;
+}
 .Destiny_button_text {
 
     font-family: "Inter";
@@ -1190,7 +1192,7 @@ margin-bottom: 30px; */
    
 } */
 
-.lordquestionflex:hover {
+/* .lordquestionflex:hover {
     background: linear-gradient(180deg, #93526E 0%, #93526E 100%);
  
     transition: .3s;
@@ -1199,7 +1201,7 @@ margin-bottom: 30px; */
 .lordquestionflex:hover p{
     color: white;
     transition: .3s;
-}
+} */
 
 .borderA:hover {
     /* color: linear-gradient(180deg, #93526E 0%, #93526E 100%);;
@@ -1213,7 +1215,7 @@ margin-bottom: 30px; */
 } */
 .questionbutton {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     padding: 20px 0px;
 }
 
@@ -1233,8 +1235,12 @@ margin-bottom: 30px; */
     font-weight: 500;
     font-size: 16px;
     margin-top: 32px;
+    cursor: pointer;
 }
-
+.questionbutton button:hover{
+    background-color: #FFFFFF;
+    transition: .3s;
+}
 /* <------------ Question2 -------------> */
 
 .question2lordshivaright {
@@ -1406,6 +1412,7 @@ margin-bottom: 30px; */
     border: none;
     outline: none;
     margin-top: 40px;
+    cursor: pointer;
 }
 .scorecontact .scorecontact-a{
     font-weight: 600;

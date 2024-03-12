@@ -46,6 +46,15 @@
 .Destiny_paragraf{
     height: 40px !important;
 }
+.hin{
+    cursor: pointer;
+}
+.sys{
+    visibility: hidden;
+}
+.lys{
+    visibility: visible;
+}
 .hin_eng{
     width: 80px;
     background-color: #E0D7C8;
@@ -70,10 +79,20 @@
 }
 .en{
  background-color: #FFFFFF ;
+ cursor: pointer;
 
 }
 .forminput button{
     margin-top: 25px !important;
+}
+.nikoting{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.nikoting img{
+    width: 50px;
+    height: 50px;
 }
 @media only screen and (max-width:1000px){
     .header_flex{

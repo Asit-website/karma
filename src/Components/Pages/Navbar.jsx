@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-
-const Navbar = () => {
+import karmis from '../../Assest/karmis.svg'
+const Navbar = ({index,setIndex}) => {
   const [depth,setDepth] = useState(1);
+
+
 
   const selectTabs = () =>{
      setDepth(1);
      document.getElementById("sen").style.background="white";
 
      document.getElementById("sen1").style.background="transparent";
+     setIndex(false);
      
   }
   const selectTabs1 = () =>{
@@ -17,6 +20,7 @@ const Navbar = () => {
     document.getElementById("sen").style.background="transparent";
 
      document.getElementById("sen1").style.background="white";
+     setIndex(true);
   }
   return (
     <>
@@ -24,7 +28,8 @@ const Navbar = () => {
         <div class="header_all">
           <div class="header_flex">
             <div class="header_text">
-              <Link className="navigatelink" to="/">
+              <Link className="navigatelink nikoting" to="/">
+                <img src={karmis} alt="karmis" />
                 Karma <span>Tracker</span> 
               </Link>
             </div>
@@ -101,7 +106,7 @@ const Navbar = () => {
                 <span className="hindi">Hi</span> <span className="En">En</span>
               </button> */}
               <div className="hin_eng">
-                 <button onClick={selectTabs} id="sen" className="en">En</button>
+                 <button  onClick={selectTabs} id="sen" className="en">En</button>
                  <button onClick={selectTabs1} id="sen1" className="hin">हि</button>
               </div>
             </div>

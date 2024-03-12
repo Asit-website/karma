@@ -39,12 +39,14 @@ const karmascore = () => {
             <hr className="ytyt" />
           </div>
           <div className="scorecontact">
-            <button className="scorecontact-button">
+            <button onClick={()=>{
+              alert("please login to continue")
+            }} className="scorecontact-button">
               <p>Contact Us for remedies</p>
             </button>
-            <div className="scorecontact-a">
+            {/* <div className="scorecontact-a">
               <NavLink to="/question"> Retake The Quiz </NavLink>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

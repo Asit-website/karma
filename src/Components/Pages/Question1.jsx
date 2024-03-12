@@ -29,7 +29,8 @@ const Question1 = () => {
       setClickedOption(0);
       setCurrentTab(currentTab + 1);
       // setShowResult(false)
-    } else {
+    } 
+    else {
       setShowResult(true);
       setCurrentTab(0)
       //  setClickedOption(0) ? setCurrentTab(0) : setCurrentTab(currentTab+1)
@@ -38,6 +39,24 @@ const Question1 = () => {
       // setCurrentQuestion(0);
     }
   };
+
+  const decreaseCount = () =>{
+    if (currentTab < QuizData.length + 1) {
+      setCurrentQuestion(currentQuestion - 1);
+      setCount(count - 1);
+      setClickedOption(0);
+      setCurrentTab(currentTab - 1);
+      // setShowResult(false)
+    } 
+    else {
+      setShowResult(true);
+      setCurrentTab(0)
+      //  setClickedOption(0) ? setCurrentTab(0) : setCurrentTab(currentTab+1)
+      // clickedOption(0)
+      // setCurrentTab(0)
+      // setCurrentQuestion(0);
+    }
+  }
 
   const submitButton = () => {
     navigate("/karmascore");
@@ -279,11 +298,9 @@ const Question1 = () => {
                         </>
                       );
                     })}
-                   
-
-
                     <div className="questionbutton">
-                      <button  onClick={increaseCount}> {count == 4 ? "Submit" : "Next"} </button>
+                    <button className={`${count == 1 ? "sys" : "lys"}`} disabled={count==1} onClick={decreaseCount}>Previous</button>
+                      <button  disabled={!clickedOption}  onClick={increaseCount}> {count == 4 ? "Submit" : "Next"} </button>
                     </div>
                   </div>
                 </div>

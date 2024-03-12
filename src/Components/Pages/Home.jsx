@@ -9,7 +9,7 @@ import profile2 from "../../Assest/Ellipse 604 (2).png";
 import profile3 from "../../Assest/Ellipse 604 (3).png";
 import { NavLink } from "react-router-dom";
 
-const Home = () => {
+const Home = ({index,setIndex}) => {
   return (
     <>
       {/* <!-- section2 --> */}
@@ -19,13 +19,18 @@ const Home = () => {
           <div className="destiny_flex">
             <div>
               <h1 className="destiny_title">
-                Your Destiny is written in the Karma
+                {/* Your Destiny is written in the Karma */}
+                {index ? "आपका भाग्य कर्म में लिखा है" : "Your Destiny is written in the Karma"}
               </h1>
               <p className="Destiny_paragraf">
-                Track, visualize, and improve your personal productivity
+                {/* Track, visualize, and improve your personal productivity */}
+                {index ? "अपनी व्यक्तिगत उत्पादकता को ट्रैक करें, विज़ुअलाइज़ करें और सुधारें" : "Track, visualize, and improve your personal productivity"}
               </p>
              <NavLink to="/question"><button className="Destiny_button">
-                <p className="Destiny_button_text">START OF THE TOUR</p>
+                <p className="Destiny_button_text">
+                  {/* START OF THE TOUR */}
+                  {index ? "दौरे की शुरुआत" : "START OF THE TOUR"}
+                  </p>
               </button></NavLink>
             </div>
           </div>
@@ -37,19 +42,31 @@ const Home = () => {
         <div className="karmaTracker">
           <div className="Tracker_flex">
             <div className="karmaTracker_text">
-              <h2 className="karmaTracker_heading">Karma Tracker</h2>
+              <h2 className="karmaTracker_heading">
+                {/* Karma Tracker */}
+                {index ? "कर्म ट्रैकर" : "Karma Tracker"}
+              </h2>
               <p className="karmaTracker_paragraf1">
-                Your Personal Guide to Online Influence
+                {/* Your Personal Guide to Online Influence */}
+                {index ? "ऑनलाइन प्रभाव के लिए आपकी व्यक्तिगत मार्गदर्शिका" : "Your Personal Guide to Online Influence"}
               </p>
               <p className="karmaTracker_paragraf2">
-                In the vast expanse of the digital universe, your interactions,
+                {/* In the vast expanse of the digital universe, your interactions,
                 contributions, and presence shape your online persona. At Karma
                 Tracker, we believe in the power of positive digital footprints
                 and the profound impact they have on communities, opportunities,
                 and personal growth. Our platform is meticulously designed to
                 help you navigate the complex world of online reputation,
                 providing you with the tools and insights needed to enhance your
-                digital karma.
+                digital karma. */}
+                {index ? "डिजिटल ब्रह्मांड के विशाल विस्तार में, आपकी बातचीत, योगदान और उपस्थिति आपके ऑनलाइन व्यक्तित्व को आकार देती है। कर्मा ट्रैकर में, हम सकारात्मक डिजिटल पदचिह्नों की शक्ति और समुदायों, अवसरों और व्यक्तिगत विकास पर उनके गहरे प्रभाव में विश्वास करते हैं। हमारा प्लेटफ़ॉर्म आपको ऑनलाइन प्रतिष्ठा की जटिल दुनिया में नेविगेट करने में मदद करने के लिए सावधानीपूर्वक डिज़ाइन किया गया है, जो आपको आपके डिजिटल कर्म को बढ़ाने के लिए आवश्यक उपकरण और अंतर्दृष्टि प्रदान करता है।" : `In the vast expanse of the digital universe, your interactions,
+                contributions, and presence shape your online persona. At Karma
+                Tracker, we believe in the power of positive digital footprints
+                and the profound impact they have on communities, opportunities,
+                and personal growth. Our platform is meticulously designed to
+                help you navigate the complex world of online reputation,
+                providing you with the tools and insights needed to enhance your
+                digital karma.`}
               </p>
             </div>
             <div className="karmaTracker_img">
@@ -65,17 +82,38 @@ const Home = () => {
         <div className="Text_summary">
           <div className="Text_summary_1">
             <div className="Text_summary_flex">
-              <p className="Text_summary_paragraf1">How it work</p>
-              <h2 className="Text_summary_title ">TEST SUMMARY</h2>
+              <p className="Text_summary_paragraf1">
+                {/* How it work */}
+                {index ? "यह कैसे कार्य करता है" : "How it work"}
+                </p>
+              <h2 className="Text_summary_title ">
+                {/* TEST SUMMARY */}
+                {index ? "परीक्षण सारांश" : "TEST SUMMARY"}
+                </h2>
 
               <p className="Text_summary_paragraf2">
-                A test summary, often found in the context of software testing,
+                {/* A test summary, often found in the context of software testing,
                 is a document that provides a comprehensive overview of testing
                 activities and their outcomes. It serves as a formal record that
                 summarizes the testing process, methodologies employed, test
                 cases executed, issues found, and the overall quality of the
                 software or product tested. Here's a breakdown of how it works
-                and what it typically includes:
+                and what it typically includes: */}
+                {
+                  index ? `एक परीक्षण सारांश, जो अक्सर सॉफ़्टवेयर परीक्षण के संदर्भ में पाया जाता है,
+                  एक दस्तावेज़ है जो परीक्षण का व्यापक अवलोकन प्रदान करता है
+                  गतिविधियाँ और उनके परिणाम। यह एक औपचारिक रिकॉर्ड के रूप में कार्य करता है
+                  परीक्षण प्रक्रिया, नियोजित पद्धतियों, परीक्षण का सारांश प्रस्तुत करता है
+                  निष्पादित मामले, पाए गए मुद्दे और समग्र गुणवत्ता
+                  सॉफ़्टवेयर या उत्पाद का परीक्षण किया गया। यह कैसे काम करता है इसका विवरण यहां दिया गया है
+                  और इसमें आम तौर पर क्या शामिल है:` : `A test summary, often found in the context of software testing,
+                  is a document that provides a comprehensive overview of testing
+                  activities and their outcomes. It serves as a formal record that
+                  summarizes the testing process, methodologies employed, test
+                  cases executed, issues found, and the overall quality of the
+                  software or product tested. Here's a breakdown of how it works
+                  and what it typically includes:`
+                }
               </p>
             </div>
           </div>
@@ -87,11 +125,19 @@ const Home = () => {
       <div>
         <div>
           <div className="usekarma">
-            <h2 className="usekarma_title">WAYS TO USE KARMA</h2>
+            <h2 className="usekarma_title">
+              {/* WAYS TO USE KARMA */}
+              {index ? "कर्म का उपयोग करने के तरीके" : "WAYS TO USE KARMA"}
+              </h2>
             <p className="usekarma_paragraf">
-              You can use karma in many ways like making sure you get the best
+              {/* You can use karma in many ways like making sure you get the best
               price at the right time along with planning your next purchase.
-              here are a few examples that we recommend:{" "}
+              here are a few examples that we recommend: */}
+              {index ? `आप कर्म का उपयोग कई तरीकों से कर सकते हैं जैसे यह सुनिश्चित करना कि आपको सर्वोत्तम मिले
+              अपनी अगली खरीदारी की योजना बनाने के साथ-साथ सही समय पर कीमत बताएं।
+              यहां कुछ उदाहरण दिए गए हैं जिनकी हम अनुशंसा करते हैं:` : `You can use karma in many ways like making sure you get the best
+              price at the right time along with planning your next purchase.
+              here are a few examples that we recommend:`}
             </p>
             <img className="usekarma_img" src={pic2} alt="" />
           </div>
@@ -645,12 +691,19 @@ const Home = () => {
         <div className="your_karma">
           <div>
             <div>
-              <h2 className="your_karma_title">What Is Your Karma Score?</h2>
+              <h2 className="your_karma_title">
+
+                {/* What Is Your Karma Score? */}
+                {index ? "आपका कर्म स्कोर क्या है?" : "What Is Your Karma Score?"}
+                </h2>
             </div>
             <div className="what">
               <button className="your_karma_button">
               <NavLink style={{textDecoration:"none"}} to="/question">
-                <p className="start_button">START NOW</p>
+                <p className="start_button">
+                  {/* START NOW */}
+                  {index ? "शुरू करें" : "START NOW"}
+                  </p>
                 </NavLink>
               </button>
             </div>
@@ -663,8 +716,8 @@ const Home = () => {
         <div>
           <div class="footer_all">
             <div class="footer_flext">
-              <div class="Home_1 ww">Home</div>
-              <div class="about_1 ww">About</div>
+              {/* <div class="Home_1 ww">Home</div>
+              <div class="about_1 ww">About</div> */}
              <NavLink to="/question"><div class="lets ww">Let’s Start</div></NavLink>
             </div>
           </div>
