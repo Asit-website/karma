@@ -29,7 +29,7 @@ const Question1 = () => {
       setClickedOption(0);
       setCurrentTab(currentTab + 1);
       // setShowResult(false)
-    } 
+    }
     else {
       setShowResult(true);
       setCurrentTab(0)
@@ -40,14 +40,14 @@ const Question1 = () => {
     }
   };
 
-  const decreaseCount = () =>{
+  const decreaseCount = () => {
     if (currentTab < QuizData.length + 1) {
       setCurrentQuestion(currentQuestion - 1);
       setCount(count - 1);
       setClickedOption(0);
       setCurrentTab(currentTab - 1);
       // setShowResult(false)
-    } 
+    }
     else {
       setShowResult(true);
       setCurrentTab(0)
@@ -70,7 +70,7 @@ const Question1 = () => {
 
 
 
-  
+
 
   const QuizData = [
     {
@@ -81,27 +81,27 @@ const Question1 = () => {
         // "Cascading Simple Sheets",
         // "Cars SUVs Sailboats",
         {
-          id:1,
-          name:"Central Style Sheets",
-           img:"images/df.svg"
+          id: 1,
+          name: "Central Style Sheets",
+          img: "images/df.svg"
         },
         {
-          id:2,
-          name:"Song the site",
-          svg:"svg",
-          img:"images/df6.svg"
+          id: 2,
+          name: "Song the site",
+          svg: "svg",
+          img: "images/df6.svg"
         },
         {
-          id:3,
-          name:"Song is good",
-          svg:"svg1",
-          img:"images/df7.svg"
+          id: 3,
+          name: "Song is good",
+          svg: "svg1",
+          img: "images/df7.svg"
         },
         {
-          id:4,
-          name:"the title is good",
-          svg:"svg5",
-          img:"images/df8.svg"
+          id: 4,
+          name: "the title is good",
+          svg: "svg5",
+          img: "images/df8.svg"
         }
       ],
       answer: 4,
@@ -114,27 +114,27 @@ const Question1 = () => {
         // "Cascading Simple Sheets",
         // "Cars SUVs Sailboats",
         {
-          id:1,
-          name:"side",
-           img:"images/df.svg"
+          id: 1,
+          name: "side",
+          img: "images/df.svg"
         },
         {
-          id:2,
-          name:"side1",
-          svg:"svg",
-          img:"images/df6.svg"
+          id: 2,
+          name: "side1",
+          svg: "svg",
+          img: "images/df6.svg"
         },
         {
-          id:3,
-          name:"This site",
-          svg:"svg1",
-          img:"images/df7.svg"
+          id: 3,
+          name: "This site",
+          svg: "svg1",
+          img: "images/df7.svg"
         },
         {
-          id:4,
-          name:"lite",
-          svg:"svg5",
-          img:"images/df8.svg"
+          id: 4,
+          name: "lite",
+          svg: "svg5",
+          img: "images/df8.svg"
         }
       ],
       answer: 2,
@@ -147,27 +147,27 @@ const Question1 = () => {
         // "Cascading Simple Sheets",
         // "Cars SUVs Sailboats",
         {
-          id:1,
-          name:"Central Style Sheets",
-           img:"images/df.svg"
+          id: 1,
+          name: "Central Style Sheets",
+          img: "images/df.svg"
         },
         {
-          id:2,
-          name:"Central Stylse Sheets",
-          svg:"svg",
-          img:"images/df6.svg"
+          id: 2,
+          name: "Central Stylse Sheets",
+          svg: "svg",
+          img: "images/df6.svg"
         },
         {
-          id:3,
-          name:"hdhdhd",
-          svg:"svg1",
-          img:"images/df7.svg"
+          id: 3,
+          name: "hdhdhd",
+          svg: "svg1",
+          img: "images/df7.svg"
         },
         {
-          id:4,
-          name:"namdhdh",
-          svg:"svg5",
-          img:"images/df8.svg"
+          id: 4,
+          name: "namdhdh",
+          svg: "svg5",
+          img: "images/df8.svg"
         }
       ],
       answer: 1,
@@ -180,27 +180,27 @@ const Question1 = () => {
         // "Cascading Simple Sheets",
         // "Cars SUVs Sailboats",
         {
-          id:1,
-          name:"Central Style Sheets",
-           img:"images/df.svg"
+          id: 1,
+          name: "Central Style Sheets",
+          img: "images/df.svg"
         },
         {
-          id:2,
-          name:"Central Stylse Sheets",
-          svg:"svg",
-          img:"images/df6.svg"
+          id: 2,
+          name: "Central Stylse Sheets",
+          svg: "svg",
+          img: "images/df6.svg"
         },
         {
-          id:3,
-          name:"hdhdhd",
-          svg:"svg1",
-          img:"images/df7.svg"
+          id: 3,
+          name: "hdhdhd",
+          svg: "svg1",
+          img: "images/df7.svg"
         },
         {
-          id:4,
-          name:"namdhdh",
-          svg:"svg5",
-          img:"images/df8.svg"
+          id: 4,
+          name: "namdhdh",
+          svg: "svg5",
+          img: "images/df8.svg"
         }
       ],
       answer: 2,
@@ -234,9 +234,9 @@ const Question1 = () => {
           </div>
           {showResult ? (
             <>
-                {
-                  navigate("/karmascore")
-                }
+              {
+                navigate("/karmascore")
+              }
             </>
           ) : (
             <>
@@ -250,7 +250,7 @@ const Question1 = () => {
                       {/* What does karma mean in Sanskrit? */}
                       {
 
-                      QuizData[currentQuestion].question
+                        QuizData[currentQuestion].question
                       }
                     </p>
 
@@ -258,14 +258,13 @@ const Question1 = () => {
                       return (
                         <>
                           <button
-                            className={`lordquestionflex ${
-                              clickedOption == i + 1 ? "checked" : null
-                            }`}
+                            className={`lordquestionflex ${clickedOption == i + 1 ? "checked" : null
+                              }`}
                             key={i}
                             onClick={() => setClickedOption(i + 1)}
                           >
                             <div className="borderA">
-                             
+
                               {/* <svg
                                 width="30"
                                 height="30"
@@ -285,29 +284,28 @@ const Question1 = () => {
                                   fill="#926D57"
                                 />
                               </svg> */}
-                             <img src={prop.img} alt="" />
+                              <img src={prop.img} alt="" />
                             </div>
                             <div className="singer">
-                              <p    className={` ${
-                              clickedOption == i + 1 ? "checked1" : null
-                            }`}
-                            key={i}
-                            onClick={() => setClickedOption(i + 1)}> {prop.name} </p>
+                              <p className={` ${clickedOption == i + 1 ? "checked1" : null
+                                }`}
+                                key={i}
+                                onClick={() => setClickedOption(i + 1)}> {prop.name} </p>
                             </div>
                           </button>
                         </>
                       );
                     })}
                     <div className="questionbutton">
-                    <button className={`${count == 1 ? "sys" : "lys"}`} disabled={count==1} onClick={decreaseCount}>Previous</button>
-                      <button  disabled={!clickedOption}  onClick={increaseCount}> {count == 4 ? "Submit" : "Next"} </button>
+                      <button className={`${count == 1 ? "sys" : "lys"}`} disabled={count == 1} onClick={decreaseCount}>Previous</button>
+                      <button disabled={!clickedOption} onClick={increaseCount}> {count == 4 ? "Submit" : "Next"} </button>
                     </div>
                   </div>
                 </div>
               </div>
             </>
           )}
-          
+
           {/* <div className="lordshivaright">
             <div className="lordquestion">
               <p className="headingright">Question {count} of 3 </p>
