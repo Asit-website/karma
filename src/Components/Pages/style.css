@@ -61,6 +61,8 @@
     font-weight: 700;
     /* font-family: "Helvetica Now Display", sans-serif; */
     font-family: "Poppins", sans-serif !important;
+    display: flex;
+    gap: 10px;
 }
 .navigatelink span{
     font-weight: 400;

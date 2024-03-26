@@ -216,15 +216,15 @@ const Question1 = () => {
      
   },[questionSol])
 
-  useEffect(()=>{
-         const storedArray = sessionStorage.getItem('karmaQuestion');
-          if(storedArray){
-            let ans  = JSON.parse(storedArray);
-            if(ans?.length){
-              setQuestionSol(ans);
-            }
-          }
-  },[])
+  // useEffect(()=>{
+  //        const storedArray = sessionStorage.getItem('karmaQuestion');
+  //         if(storedArray){
+  //           let ans  = JSON.parse(storedArray);
+  //           if(ans?.length){
+  //             setQuestionSol(ans);
+  //           }
+  //         }
+  // },[])
 
   return (
     <>

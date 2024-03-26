@@ -91,8 +91,8 @@
     gap: 6px;
 }
 .nikoting img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 @media only screen and (max-width:1000px){
     .header_flex{
