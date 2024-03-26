@@ -14,6 +14,9 @@ const Question1 = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showResult, setShowResult] = useState(false);
 
+  const [questionSol , setQuestionSol] = useState([]);
+   
+
   const increaseCount = () => {
     // setCount(count + 1);
     // setCurrentTab(currentTab + 1);
@@ -67,9 +70,6 @@ const Question1 = () => {
       <Loading />;
     }
   }, []);
-
-
-
 
 
   const QuizData = [
@@ -207,6 +207,25 @@ const Question1 = () => {
     },
   ];
 
+  useEffect(()=>{
+ 
+     if(questionSol.length > 0){
+      sessionStorage.setItem('karmaQuestion', JSON.stringify(questionSol));
+
+     }
+     
+  },[questionSol])
+
+  useEffect(()=>{
+         const storedArray = sessionStorage.getItem('karmaQuestion');
+          if(storedArray){
+            let ans  = JSON.parse(storedArray);
+            if(ans?.length){
+              setQuestionSol(ans);
+            }
+          }
+  },[])
+
   return (
     <>
       <div className="parentlordshiva">
@@ -258,10 +277,25 @@ const Question1 = () => {
                       return (
                         <>
                           <button
-                            className={`lordquestionflex ${clickedOption == i + 1 ? "checked" : null
+                            className={`lordquestionflex ${questionSol[currentQuestion] == i + 1 ? "checked" : null
                               }`}
                             key={i}
-                            onClick={() => setClickedOption(i + 1)}
+                            onClick={
+                              () =>{
+                                 setClickedOption(i + 1);
+                                     if(questionSol[currentQuestion]){
+                                      // update 
+                                      let updateAns = [...questionSol];
+                                       updateAns[currentQuestion] =  i+1;
+                                       setQuestionSol(updateAns);
+                                      
+                                     }
+                                     else {
+                                       setQuestionSol(prevSol => [...prevSol, i+1]);
+                                      }
+
+                                }
+                            }
                           >
                             <div className="borderA">
 
@@ -287,10 +321,13 @@ const Question1 = () => {
                               <img src={prop.img} alt="" />
                             </div>
                             <div className="singer">
-                              <p className={` ${clickedOption == i + 1 ? "checked1" : null
+                              <p className={` ${questionSol[currentQuestion] == i + 1 ? "checked1" : null
                                 }`}
                                 key={i}
-                                onClick={() => setClickedOption(i + 1)}> {prop.name} </p>
+                                onClick={() =>{ 
+                                  setClickedOption(i + 1);
+                                  
+                                  }}> {prop.name} </p>
                             </div>
                           </button>
                         </>
@@ -298,7 +335,7 @@ const Question1 = () => {
                     })}
                     <div className="questionbutton">
                       <button className={`${count == 1 ? "sys" : "lys"}`} disabled={count == 1} onClick={decreaseCount}>Previous</button>
-                      <button disabled={!clickedOption} onClick={increaseCount}> {count == 4 ? "Submit" : "Next"} </button>
+                      <button disabled={!questionSol[currentQuestion]} onClick={increaseCount}> {count == 4 ? "Submit" : "Next"} </button>
                     </div>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import karmis from '../../Assest/karmis.svg'
+import karmis from '../../Assest/logo.png'
 const Navbar = ({index,setIndex}) => {
   const [depth,setDepth] = useState(1);
 
@@ -29,6 +29,7 @@ const Navbar = ({index,setIndex}) => {
           <div class="header_flex">
             <div class="header_text">
               <Link className="navigatelink nikoting" to="/">
+
                 <img src={karmis} alt="karmis" />
                 Karma <span>Tracker</span> 
               </Link>
